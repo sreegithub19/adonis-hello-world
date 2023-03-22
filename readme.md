@@ -20,8 +20,10 @@ Push to github and deploy to vercel:
 
 - git add . && git commit -m "c" && git push origin main
 - npm run build
+- node ace dump:rcfile # to create .adonisrc.json file in the project's root directory
 - cd build
 - npm ci --production
-- (Copy-pasted .env file in build folder)
+- (Copy-pasted .env.example file as .env file in build folder)
+- (Copy-pasted .adonisrc.json file in "node_modules/@adonisjs/application/build")
 - node server.js
 - vercel --prod
